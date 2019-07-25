@@ -14,3 +14,15 @@ body {
   margin: 5%;
   padding: 5%
 }
+
+.carousel .item {
+  height: 300px;
+}
+
+.item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    max-height: 300px;
+}
