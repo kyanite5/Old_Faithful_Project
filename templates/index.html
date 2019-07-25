@@ -8,27 +8,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Local style CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/styles.css">
     <!-- Avoid fake favicon requests -->
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <title>Old Faithful</title>
   </head>
 
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="collapse navbar-collapse" id="navbar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			   <span class="navbar-toggler-icon"></span>
-		     </button>
-         <a class="navbar-brand" href="#">
-           <img src="/static/images/geyser-clipart.jpg" width="50" height="50" class="d-inline-block align-middle" alt="">
-           Geyser Homepage
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+           <a class="navbar-brand" href="#">
+           <img src="../static/images/geyser-clipart.jpg" width="50" height="50" class="d-inline-block align-middle" alt="">
+           Homepage
         </a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">About Old Faithful</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Machine Learning</a>
+            <a class="nav-link" href="#">Machine Learning Project</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Data</a>
@@ -43,7 +41,39 @@
       </div>
     </nav>
 
-    <h1>Hello, world!</h1>
+    <div class="container-fluid">
+      <div class="row justify-content-start">
+        <div class="col-md-7">
+          <div class="panel1">
+					    <img src="static/images/old_faithful.jpg" style="float: center; width:110%; margin: 3%" alt="Old Faithful">
+					      <p>Old Faithful is a natural geothermal feature in Yellowstone National Park.</p>
+					 </div> <!-- End panel -->
+        </div>
+
+        <div class="col-md-5">
+          <div class="panel2">
+            <h4> About Old Faithful </h4>
+            <p> Text about the geyser and park
+             Text about the geyser and park
+            Text about the geyser and park </p>
+          </div>
+        </div>
+      </div> <!-- End row -->
+    </div> <!-- End container -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel3">
+            <h3> Geology of Geysers</h3>
+          </div>
+        </div>
+      </div> <!-- End row -->
+    </div> <!-- End container -->
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
