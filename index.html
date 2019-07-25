@@ -4,9 +4,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Leaflet js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
     <!-- Local style CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/styles.css">
     <title>Old Faithful</title>
@@ -66,7 +73,7 @@
         <div class="carousel-item">
           <img class="d-block img-fluid" src="static/images/geyser_lodge.jpg" alt="Data">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Click on Data for data used in this study</h3>
+              <h3>Click on Data for datasets used in this study</h3>
             </div>
           </div>
         <div class="carousel-item">
@@ -90,8 +97,7 @@
       <div class="row justify-content-start">
         <div class="col-md-7">
           <div class="panel1">
-					    <img src="static/images/old_faithful.jpg" style="float: center; width:110%; margin: 3%" alt="Old Faithful">
-					      <p>Old Faithful is a natural geothermal feature in Yellowstone National Park.</p>
+					   <p>Old Faithful is a natural geothermal feature in Yellowstone National Park.</p>
 					 </div> <!-- End panel -->
         </div>
 
@@ -106,6 +112,8 @@
       </div> <!-- End row -->
     </div> <!-- End container -->
 
+
+
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
@@ -116,8 +124,20 @@
       </div> <!-- End row -->
     </div> <!-- End container -->
 
+    <div class="container-fluid">
+    <div id="map"></div>
+  </div>
 
 
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel3">
+              <h3> Live Link</h3>
+            </div>
+          </div>
+        </div> <!-- End row -->
+      </div> <!-- End container -->
 
 
     <!-- Optional JavaScript -->
@@ -125,5 +145,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- API key -->
+    <script type="text/javascript" src="/static/js/config.js"></script>
+    <!-- Our JS -->
+    <script type="text/javascript" src="/static/js/id_map.js"></script>
+
   </body>
 </html>
