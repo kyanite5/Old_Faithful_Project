@@ -1,0 +1,16 @@
+body {
+  background-color: white;
+}
+
+.container-fluid {
+  background-color: white;
+}
+.panel1 {
+  margin: 5%;
+  padding: 5%
+}
+
+.panel2 {
+  margin: 5%;
+  padding: 5%
+}
