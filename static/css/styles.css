@@ -9,9 +9,9 @@ body {
 
 #map {
     height: 85%;
-    width: 55%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 95%;
+    margin: 3%
+    padding: 3%
 }
 
 .leaflet-control-layers-expanded {
@@ -53,5 +53,5 @@ body {
     object-fit: cover;
     top: 0;
     left: 0;
-    max-height: 450px;
+    max-height: auto;
   }
