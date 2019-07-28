@@ -1,8 +1,8 @@
 var now = ~~(Date.now() / 1000);
-var threehours = (now - 10800);
-console.log(now, threehours);
+var fourhours = (now - 14400);
+console.log(now, fourhours);
 
-d3.json("https://www.geysertimes.org/api/v5/entries/" + threehours + "/" + now + "/2").then((data) => {
+d3.json("https://www.geysertimes.org/api/v5/entries/" + fourhours + "/" + now + "/2").then((data) => {
 
 var unix_timestamp1 = data['entries'][0].time;
 console.log(data['entries'][0].time);
