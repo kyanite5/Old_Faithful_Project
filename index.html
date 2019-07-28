@@ -90,7 +90,7 @@
             <h5>The Geology Behind Old Faithful</h5>
 					   <p>Yellowstone National Park is located above a hotspot where the lithosphere rides over the mantle. Basalt generated magma is associated with hotspots, and under decompression and low pressure, low temperature material will begin to melt. Geysers are associated with hotspot and are formed when rain or melted snow percolates into the ground through cracks and fractures and interacts with the hot underlying rocks. The water reaches temperatures over 100 degrees Celsius, but because there is so much rock above the water, the water does not boil. Instead it becomes superheated and pressurized. Once enough pressure builds up, the superheated water will overcome the weight of the overlying rocks and burst out of the ground in an explosive manner. </p>
              <br>
-             <p> Old Faithful in Yellowstone is one of the most famous geysers in the world, and erupts approximately every 80 minutes and can reach up to nearly 200 feet in height. However, in the past Yellowstone erupted much more frequently, on average about every 50 minutes. So what contributed to this change? Observing Old Faithful over several eruptions, one observes that when the eruption ("duration" in this stdy) is short (less than about two minutes in length), then the next eruption usually occurs more quickly (i.e., the "waiting time" is decreased). When the eruption is more powerful (up to five minutes long), it takes more time for the pressure to reach the critical level, and the waiting time increases significantly.</p>
+             <p> Old Faithful in Yellowstone is one of the most famous geysers in the world, and erupts approximately every 80 minutes and can reach up to nearly 200 feet in height. However, in the past Yellowstone erupted much more frequently, on average about every 50 minutes. So what contributed to this change? Over several eruptions, one observes that when the eruption ("duration" in this study) is short (less than about two minutes in length), then the next eruption usually occurs more quickly (i.e., the "waiting time" is decreased). When the eruption is more powerful (up to five minutes long), it takes more time for the pressure to reach the critical level, and the waiting time increases significantly.</p>
 					 </div> <!-- End panel -->
          </div>
         <div class="col-md-6">
@@ -106,13 +106,33 @@
     </div> <!-- End container -->
 
     <div class="container-fluid">
-    <br>
-    <h4>Old Faithful Webcam and Realtime Data</h4>
-    <br>
-    <h5>Time of last Old Faithful Eruption (Mountain Time):  <span id="output"></span></h5>
-    <h5><a class="webcam" href="https://www.nps.gov/yell/learn/photosmultimedia/webcams.htm">Old Faithful Live Webcam</a></H5>
-    </div>
-
+      <div class="row justify-content-start">
+        <div class="col-md-6">
+          <div class="panel3">
+          <br>
+          <h4><center>Old Faithful Realtime Data and Webcam</center></h4>
+          <hr>
+          <br>
+          <ul>
+            <li><h5>Most recent eruption times of Old Faithful:<h5></li>
+            <h5>1) <span id="last"></span></h5>
+            <h5>2) <span id="second_last"></span></h5>
+            <br>
+            <li><h5>Waiting Time (minutes): <span id="waiting"></span><h5></li>
+            <br>
+            <li><h5><a class="webcam" href="https://www.nps.gov/yell/learn/photosmultimedia/webcams.htm">Old Faithful Live Webcam</a></h5></li>
+          </ul>
+          <br>
+          <p>Contains information from <a href= "https://GeyserTimes.org">GeyserTimes</a>, which is made available  <a href="https://opendatacommons.org/licenses/odbl/">here</a> under the Open Database License (ODbL). Webcam and images are public domain and available from the <a href="https://nps.gov">National Park Service.</a></p>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel4">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div> <!-- End row -->
+    </div> <!-- End container -->
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
