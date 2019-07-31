@@ -42,10 +42,16 @@ body {
 }
 
 .panel3 {
+  margin: 3% !important;
+  padding: 3% !important;
+  background-color: lightgrey !important
+
+}
+
+.intro {
   margin: 3%;
   padding: 3%;
   background-color: LightSteelBlue
-
 }
 
 .item img {

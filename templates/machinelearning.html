@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Local style CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/styles.css">
-    <title>Old Faithful Resources and References</title>
+    <title>Machine Learning</title>
   </head>
 
   <body>
@@ -37,48 +37,89 @@
     </nav>
 
     <div class="container-fluid">
+      <div class="intro">
       <br>
       <h4> Machine Learning Techniques Applied to Geyser Eruptions in Yellowstone 1970-2019</h4>
       <br>
       <p>Old Faithful Geyser in Yellowstone National Park is a unique hydrothermal feature that gained its name from its reputation for erupting very regularly approximately every hour. In recent years, the waiting time has fluctuated considerably. Several studies have addressed this relationship using a small dataset of 272 measurements taken in August 1985 (Hardle (1991); Azzalini and Bowman (1990)) and these data are even used as a classic training dataset as part of the R program training manual. In this project, all eruption data available from ranger log transcriptions from 1970 through July 2019 were compiled to create the most complete dataset of Old Faithful eruptions. Several machine learning techniques were utilized, including linear regression, K-means clustering, and polynomial regression to find a predictive relationship between waiting time between eruption and duration of eruption. In the earliest years of Old Faithful observations (1970-1992), robust descriptions of both waiting times and durations were recorded. In more recent years (1992-2019), the National Park Service has recorded more frequent individual waiting time intervals (0-1 minutes) versus a more holistic approach of categorizing of an entire eruption event, which may contain several mini-eruptions. They have also abandoned the practice of recording the duration of eruptions in minutes, and frequently use categories of "long," "short," and "medium" duration instead. This fundamental change in reporting affects the machine learning results, rendering these techniques less useful in making predictions. However, overall one can see from these data that the waiting time between eruptions in minutes has shifted from 50-60 minutes in the 1970's and 1980's, to approximately 90 minutes today. </p>
-      <hr>
+      </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="col-6">
-          <img src="static/images/bimodal_w_recent_data.PNG" alt="1970-2019 Waiting Times" height="610">
+        <div class="col-md-8">
+          <img src="static/images/waiting_year.PNG" alt="Waiting times 1970-2019">
+        </div>
+        <div class="col-md-4">
+          <br><br><br>
+          <p>The range of waiting time (minutes) between eruptions from 1970 to 2019. Geyser eruption data was not recorded between 1982 and 1992, however, resumption of the observational program may have occurred after the park recovered from widespread devastating wildfires in 1988, which drew massive public attention to and interest in the national park.</p>
         </div>
       </div> <!-- End row -->
-      <hr>
     </div> <!-- End container -->
+    <hr>
 
-   <div class="container-fluid">
-     <div class="row">
-       <div class="col-6">
-         <img src="static/images/bimodal.PNG" alt="waiting time vs. duration" height="610">
-       </div>
-      </div> <!-- End row -->
-      <hr>
-    </div> <!-- End container -->
-
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="col-6">
-          <img src="static/images/waiting_year.PNG" alt="1970-2019 Waiting Times" height="610">
+        <div class="col-md-8">
+          <img src="static/images/bimodal_w_recent_data.PNG" alt="bimodal distribution">
+        </div>
+        <div class="col-md-4">
+          <br><br><br>
+          <p>The figure at left shows the frequency of recorded waiting times between eruptions in minutes. While the data overall has a bimodal distribution, which has been documented in numerous previous studies, there is also a large cluster of data recording waiting times of less than 10 minutes. This is the result of a change in reporting eruption events in recent years.</p>
         </div>
       </div> <!-- End row -->
-      <hr>
     </div> <!-- End container -->
+    <hr>
 
-    <div class="container-fluid">
+   <div class="container">
      <div class="row">
-       <div class="col-6">
-         <img src="static/images/waiting_duration.PNG" alt="waiting time vs. duration" height="610">
+       <div class="col-md-8">
+         <img src="static/images/bimodal.PNG" alt="bimodal distribution truncated" >
+       </div>
+       <div class="col-md-4">
+         <br><br><br>
+         <p>The datasets were categorized into two bins: early data (1970-1992) and late data (1992-2019). Additionally, waiting times of less than 10 minutes were removed from the dataset. This figure shows the bimodal distributions of both data sets and the shift in modes that has occurred over time.</p>
        </div>
       </div> <!-- End row -->
-      <hr>
     </div> <!-- End container -->
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+         <img src="static/images/waiting_duration.PNG" alt="scatter plot waiting time vs. duration">
+       </div>
+       <div class="col-md-4">
+         <br><br><br>
+         <p>The relationship between waiting time between eruption and duration of eruption is roughly linear. Two distinct clusters of data can be discerned, one corresponding with shorter eruption durations, and consequently shorter waiting times, and another with longer eruption durations that result with longer waiting times. These data are color-coded by year to show the apparent shift between these relationships over time. Notice the cluster of recent data representing very short waiting times between eruptions (less than 10 minutes).</p>
+       </div>
+      </div> <!-- End row -->
+    </div> <!-- End container -->
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+         <img src="static/images/waiting_dur_early_late_trend.PNG" alt="scatter plot waiting time vs. duration">
+       </div>
+       <div class="col-md-4">
+         <p>Of all machine learning methods employed, linear regression was the best fit for predicting waiting times for Old Faithful eruptions, with the fit through the late dataset slightly better.<br><br>
+         <strong>Early (1970-1992):</strong> <br><hr>
+         <strong>duration = 0.0657(waiting time) -1.1497</strong><br>
+         Mean Squared Error (MSE): 0.37196245844703385<br>
+         R-squared (R2 ): 0.6736693904639421<br>
+         <br>
+         <strong>Late (1992-2019):</strong><br><hr>
+         <strong>duration = 0.0656(waiting time) -1.823</strong><br>
+         MMean Squared Error (MSE): 0.3715010512059392<br>
+         R-squared (R2 ): 0.7125130302988406<br>
+       </p>
+       </div>
+      </div> <!-- End row -->
+    </div> <!-- End container -->
+    <hr>
+
+    <center><p>Predictions for next eruption: (duration + 1.1823)/0.0656</p></center>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

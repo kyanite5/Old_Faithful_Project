@@ -35,4 +35,18 @@ console.log(data['entries'][1].time);
 var wt = (unix_timestamp2 - unix_timestamp1)/60;
 document.getElementById('waiting').innerHTML = wt;
 console.log(formattedTime1, formattedTime2, wt);
+
+var dur = data['entries'][0].duration;
+
+if (dur === "") {
+  console.log("No data available");
+  document.getElementById('duration').innerHTML = "No data available";
+  document.getElementById('prediction').innerHTML = "Not available";
+  }
+  else {
+  console.log(data['entries'][0].duration);
+  var prediction = (dur + 1.1823)/0.0656;
+  document.getElementById('duration').innerHTML = dur;
+  document.getElementById('prediction').innerHTML = prediction;
+}
 });
