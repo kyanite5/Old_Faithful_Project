@@ -4,7 +4,7 @@ d3.json(mapurl).then((mapData) => {
 
 //Define icon
     var ofIcon = L.icon({
-        iconUrl: 'static/images/star.png',
+        iconUrl: 'static/images/star.JPG',
         iconSize: [30,30]
     });
 
