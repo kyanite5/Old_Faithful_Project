@@ -47,10 +47,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-8">
-          <img src="static/images/waiting_year.JPG" alt="Waiting times 1970-2019" width="100%" height="100%">
+          <embed src="static/images/chart1.html" style="width:900px; height: 550px;">
         </div>
         <div class="col-md-4">
-          <br><br><br>
+          <br><br><br><br>
           <p>The range of waiting time (minutes) between eruptions from 1970 to 2019. Geyser eruption data was not recorded between 1982 and 1992, however, resumption of the observational program may have occurred after the park recovered from widespread devastating wildfires in 1988, which drew massive public attention to and interest in the national park.</p>
         </div>
       </div> <!-- End row -->
@@ -60,10 +60,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-8">
-          <img src="static/images/bimodal_w_recent_data.JPG" alt="bimodal distribution" width="100%" height="100%">
+          <embed src="static/images/chart4.html" style="width:900px; height: 550px;">
         </div>
         <div class="col-md-4">
-          <br><br><br>
+          <br><br><br><br>
           <p>The figure at left shows the frequency of recorded waiting times between eruptions in minutes. While the data overall has a bimodal distribution, which has been documented in numerous previous studies, there is also a large cluster of data recording waiting times of less than 10 minutes. This is the result of a change in reporting eruption events in recent years.</p>
         </div>
       </div> <!-- End row -->
@@ -73,7 +73,7 @@
    <div class="container-fluid">
      <div class="row">
        <div class="col-md-8">
-         <img src="static/images/bimodal.JPG" alt="bimodal distribution truncated" width="100%" height="100%">
+         <embed src="static/images/chart5.html" style="width:900px; height: 550px;">
        </div>
        <div class="col-md-4">
          <br><br><br>
@@ -86,7 +86,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-8">
-         <img src="static/images/waiting_duration.JPG" alt="scatter plot waiting time vs. duration" width="100%" height="100%">
+         <embed src="static/images/chart2.html" style="width:900px; height: 550px;">
        </div>
        <div class="col-md-4">
          <br><br><br>
@@ -99,9 +99,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-8">
-         <img src="static/images/waiting_dur_early_late_trend.JPG" alt="scatter plot waiting time vs. duration" width="100%" height="100%">
+         <embed src="static/images/chart6.html" style="width:900px; height: 550px;">
        </div>
        <div class="col-md-4">
+         <br><br>
          <p>Of all machine learning methods employed, linear regression was the best fit for predicting waiting times for Old Faithful eruptions, with the fit through the late dataset slightly better.<br><br>
          <strong>Early (1970-1992):</strong> <br><hr>
          <strong>duration = 0.0657(waiting time) -1.1497</strong><br>
@@ -112,6 +113,29 @@
          <strong>duration = 0.0656(waiting time) -1.823</strong><br>
          MMean Squared Error (MSE): 0.3715010512059392<br>
          R-squared (R2 ): 0.7125130302988406<br>
+       </p>
+       </div>
+      </div> <!-- End row -->
+    </div> <!-- End container -->
+    <hr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+         <embed src="static/images/chart7.html" style="width:900px; height: 550px;">
+       </div>
+       <div class="col-md-4">
+         <br><br>
+         <p><strong>Gaussian Mixture Model</strong><br><br>
+         <strong>Early (1970-1992):</strong> <br><hr>
+         means = (51.71911907, 1.86327279)<br>
+                 (75.08297127, 3.9686862)<br>
+         covariances: (50.96225456, 0.24231092, 0.24231092  0.10778268)<br>
+                      (65.93873062, 1.21009422, 1.21009422, 0.20764745)<br>
+         <strong>Late (1992-2019):</strong><br><hr>
+         means = (86.69139633, 4.03529324)<br>
+                 (58.83940175, 1.69951985)<br>
+          covariances: (60.13146947, 0.60345013, 0.60345013, 0.16387125)<br>
+                       (58.76512033, 0.78068256, 0.78068256, 0.10092446)<br>
        </p>
        </div>
       </div> <!-- End row -->

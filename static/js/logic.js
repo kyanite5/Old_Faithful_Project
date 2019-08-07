@@ -44,8 +44,8 @@ if (dur === "") {
   document.getElementById('prediction').innerHTML = "Not available";
   }
   else {
-  console.log(data['entries'][0].duration);
-  var prediction = (dur + 1.1823)/0.0656;
+  console.log(parseFloat(data['entries'][0].duration));
+  var prediction = ((parseFloat(dur)) + 1.1823)/0.0656;
   document.getElementById('duration').innerHTML = dur;
   document.getElementById('prediction').innerHTML = prediction;
 }
